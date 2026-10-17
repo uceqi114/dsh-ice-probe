@@ -31,10 +31,12 @@ The plan🧊🧊🧊 …
 ## Install
 
 ```bash
-dsh plugin add github:OWNER/dsh-ice-probe
-```
+# from npm (no build step)
+dsh plugin add dsh-ice-probe
 
-(`OWNER` = the GitHub account that publishes this repository.)
+# or straight from GitHub
+dsh plugin add github:uceqi114/dsh-ice-probe
+```
 
 Then make sure the plugin is **enabled** in the plugin marketplace. Enabling/disabling the plugin is the on/off switch — there is no in-conversation toggle.
 
@@ -45,13 +47,13 @@ If you prefer to install it by hand:
 1. Clone or copy this repository anywhere.
 2. Add a link dependency to your profile's `package.json`:
    ```json
-   "@local/dsh-ice-probe": "link:D:/path/to/dsh-ice-probe"
+   "dsh-ice-probe": "link:D:/path/to/dsh-ice-probe"
    ```
 3. Register the bundle in the same file:
    ```json
-   "dsh": { "profile": { "bundles": ["@local/dsh-ice-probe"] } }
+   "dsh": { "profile": { "bundles": ["dsh-ice-probe"] } }
    ```
-4. Make sure `node_modules/@local/dsh-ice-probe` resolves to the plugin directory.
+4. Make sure `node_modules/dsh-ice-probe` resolves to the plugin directory.
 
 ## Verify it works
 

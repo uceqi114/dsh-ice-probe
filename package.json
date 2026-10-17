@@ -4,6 +4,14 @@
   "description": "Appends a 🧊 marker to the end of every sentence — chain of thought included — and plays a short sound for each insertion.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uceqi114/dsh-ice-probe.git"
+  },
+  "homepage": "https://github.com/uceqi114/dsh-ice-probe#readme",
+  "bugs": {
+    "url": "https://github.com/uceqi114/dsh-ice-probe/issues"
+  },
   "keywords": [
     "dsh",
     "dsh-plugin",
